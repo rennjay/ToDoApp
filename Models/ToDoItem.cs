@@ -10,8 +10,8 @@ namespace ToDoApp.Models
         public int Id { get; set; }
         public required string Title { get; set; }
         public string? Description { get; set; }
-        public bool IsCompleted { get; set; }
+        public bool IsCompleted { get; set; } = false;
         public DateTime CompletionDate { get; set; }
-        public DateTime DateCreated { get; set; }
+        public DateTime DateCreated { get; set; } = DateTime.Now;
     }
 }
